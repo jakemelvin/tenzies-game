@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*Gestion de l'ensemble du corps*/
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Karla", sans-serif;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bodyOfTheBody {
+  background-color: #0b2434;
+  height: 379px;
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.body {
+  background-color: #f5f5f5;
+  height: 320px;
+  width: 320px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.jeu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 17.92px;
+  row-gap: 18.56px;
+}
+/*Design les dés*/
+.die {
+  width: 35.84px;
+  height: 35.84px;
+  border-radius: 3.81px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+.die:hover {
+  cursor: pointer;
+}
+.die h2 {
+  font-size: 20.59px;
+  text-align: center;
+  font-weight: 700;
+  color: #2b283a;
+}
+.die.green {
+  background-color: #59e391;
+}
+
+/*Gestion du titre et de la description*/
+
+.game-title{
+  text-align: center;
+  font-weight: 700;
+  font-size: 25.6px;
+  margin-bottom: 15px;
+}
+.explication{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 13.11px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+/*Gestion du bouton*/
+.roll{
+    width: 92.16px;
+    height: 35.84px;
+    border-radius: 3.81px;
+    background-color: #5035FF;
+    color: white;
+    border: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16.38px;
+    margin-top: 25.6px;
+    box-shadow: 0px 2px 2px 0px #00000026;
+    font-family: "Karla", sans-serif;
+}
+.roll:hover{
+    cursor: pointer;
+}
+
+/*Gestion du score*/
+.green-score{
+  color: #59e391;
+}
+.red-score{
+  color: rgb(192, 37, 37);
+}
